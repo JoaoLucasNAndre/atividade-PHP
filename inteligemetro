@@ -1,0 +1,29 @@
+<?php
+
+  $dia = (int) readline("DIA: ");
+  $mes = (int) readline("MÊS: ");
+  $ano = (int) readline("ANO: ");
+
+  inteligemetro ($dia, $mes, $ano);
+
+  function inteligemetro(int $dia, int $mes, int $ano){
+
+    $ano = $ano % 100;
+    $inteligentice = somatorio($mes) + ($ano / 100) * (50 - $dia);
+    $burrice = 100 - $inteligentice;
+
+    print("Burro: $burrice%");
+    print("\nInteligente: $inteligentice%");
+
+}
+
+function somatorio(int $mes){
+  $somatorio = 0;
+
+  for ($i=0; $i <= $mes; $i++){
+    $somatorio = 0;
+
+  };
+  return $somatorio;
+
+};
